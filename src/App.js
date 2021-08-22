@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import LoadingOverlay from "react-loading-overlay";
-import Skeleton from "react-loading-skeleton";
 
 import "./App.css";
 import CardText from "./components/CardText";
@@ -103,6 +102,7 @@ function App() {
     <LoadingOverlay
       active={isLoading}
       spinner
+      fadeSpeed={200}
       text="Loading..."
       styles={{
         overlay: (base) => ({
@@ -211,7 +211,6 @@ function App() {
               </>
             ) : (
               <>
-                {" "}
                 <div
                   className="aside__body--top bg-cloud"
                   style={{
@@ -240,7 +239,8 @@ function App() {
                     <p>{dateObj.timeDay}</p>
                     <span>.</span>
                     <p>
-                      {dateObj.dayWord}, {dateObj.day} {dateObj.month}
+                      {dateObj.dayWord},{dateObj.day}
+                      {dateObj.month}
                     </p>
                   </div>
                   <div className="location">
