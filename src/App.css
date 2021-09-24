@@ -427,7 +427,7 @@ footer {
 
   .main__top {
     display: flex;
-    margin: 0;
+    margin: 40px 10px;
   }
 
   .main__bottom {

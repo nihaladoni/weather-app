@@ -280,7 +280,7 @@ function App() {
               ))}
           </div>
           <div className="main__bottom">
-            <h5>Today’s Hightlights </h5>
+            <h5 style={{ marginBottom: "30px" }}>Today’s Hightlights </h5>
 
             <div className="card-container">
               <CardText
